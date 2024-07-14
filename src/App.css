@@ -1,0 +1,6 @@
+.app{
+  min-height: 100vh;
+  display: grid;
+  
+  background-color: rgb(202, 237, 230);
+}
