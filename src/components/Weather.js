@@ -47,7 +47,7 @@ const Wheather = () => {
       return;
     }
   try{
-    const url=`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=c86ed4d2c6064a36e4663b2adedb3619`;
+    const url=`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${process.env.REACT_APP_API_ID}`;
     const response=await fetch(url);
     const data=await response.json();
     if(!response.ok){
